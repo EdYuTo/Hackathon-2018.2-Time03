@@ -9,4 +9,12 @@ $(document).ready(function () {
     $("#graficoScreen").click(function () {
         $(".main").load("grafico.html");
     });
+
+    $("#addScreen").click(function () {
+        $(".main").load("adicionar.html");
+    });
+
+    $("#inScreen").click(function () {
+        $(".main").load("entrada.html");
+    });
 });
