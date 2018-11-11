@@ -1,27 +1,35 @@
 <html>
 <body>
 	<div style="width: 50%; margin: auto;">
-		<h1 style="text-align: center;">Gasto</h1>
-		<h5>Item</h5>
-		<input type="text" name="nome do gasto" size="80%">
-		<div style="width: 100%">
-			<div style="display: inline-block;">
-			<h5>Valor/unidade</h5>
-			<input type="text" name="valor" size="35%"> R$ &nbsp &nbsp 
+		<h1 style="text-align: center;" class="display-4 font-weight-normal">Gasto</h1>
+
+		<div class="mb-3">
+		<label for="Item">Item</label>
+        	<input type="text" class="form-control" id="Item" placeholder="De onde veio?" required="">
+        </div>
+
+        <div class="row">
+        	<div class="col-md-6 mb-3">
+			<label for="Preco">Preço por Item</label>
+			<input type="text" class="form-control" id="Preco" placeholder="R$" required="">
 			</div>
-			<div style="display: inline-block;">
-			<h5>quantidade</h5>
-			<input type="text" name="quantidade" size="35%">
+			<div class="col-md-6 mb-3">
+			<label for="Quantidade">Quantidade</label>
+			<input type="text" class="form-control" id="Quantidade" placeholder="Quantos itens?" required="">
 			</div>
-		</div>
-		<h5>Descrição</h5>
-		<input type="text" name="nome do gasto" size="80%">
-		<h5>Data</h5>
-		<input type="date" name="nome do gasto">
-		<div style="width: 20%; margin: auto; height: 30px;
-		background-color: green; text-align: center;
-		color: white;"><h4><strong>Confirmar</strong></h4></div>
-		<br>
+	  	</div>
+
+		<div class="mb-3">
+		<label for="Descricao">Descrição</label>
+        	<input type="text" class="form-control" id="Descricao" placeholder="Descreva esse item Pexinho" required="">
+        </div>
+		
+		<div class="mb-3">
+		<label for="DataM">Data</label>
+        	<input type="text" class="form-control" id="DataM" placeholder="Quando entrou?" required="">
+        </div>
+
+		<div style="text-align: center;"><a class="btn btn-primary my-2">Confirmar<a></div>
 	</div>
 </body>
 </html>
