@@ -9,7 +9,7 @@ $(document).ready(function () {
     var valorToUsado = []
 
 
-    nomes.push("Guarda napo de papel")
+    nomes.push("Guardanapo de papel")
     nomes.push("Papel higiênico")
     nomes.push("Papel toalha")
     nomes.push("Água sanitária")
@@ -47,13 +47,13 @@ $(document).ready(function () {
 
     for(i = 0; i < nomes.length; i++){
         $(".insumos").append(
-            "<p>" + nomes[i] + "</p>" + 
-            "<p>" + quantidadeMedio[i] + "</p>" + 
-            "<p>" + valorUnitarioMedio[i] + "</p>" + 
-            "<p>" + valorTotMedio[i] + "</p>" + 
-            "<p>" + quantidadeUsado[i] + "</p>" + 
-            "<p>" + valorUnitarioUsado[i] + "</p>" + 
-            "<p>" + valorToUsado[i] + "</p>"
+            "<ul>" + nomes[i] + ", quantidade: " + quantidadeMedio[i] +  
+                "<ul>" + "Valor unitário médio: " + valorUnitarioMedio[i] +    "</ul>" +
+                "<ul>" + "Valor médio total: " + valorTotMedio[i] +         "</ul>" +
+                "<ul>" + "Valor unitário comprado: " +valorUnitarioUsado[i] +    "</ul>" +
+                "<ul>" + "Valor unitário total: " +valorToUsado[i] +          "</ul>" +        
+            "</ul>"  + "<hr>"
+
         )
     }
 });
