@@ -2,3 +2,4 @@
 * Bruno Bacelar Abe
 * Edson Yudi Toma
 * Vinícius Ribeiro da Silva
+* Marcelo Tabacnik
