@@ -1,15 +1,21 @@
 $(document).ready(function () {
     $("#buttonGasta").click(function () {
-        var name = $("#nameGasto").val();
-        var valor = $("#valorGasto").val();
-        var quant = $("#quantGasto").val();
-        var data = $("#dataGasto").val();
+        var name = $("#Item").val();
+        var valor = $("#Preco").val();
+        var quant = $("#Quantidade").val();
 
-        maxReceita -= valor
+        maxReceita -= (valor * quant)
+
         nomes.push(name) 
         quantidadeUsado.push(quant)
-        valorUnitarioUsado.push(quant/valor)
-        valorToUsado.push(valor)
-        data.push(data)
+        valorUnitarioUsado.push(quant)
+        valorToUsado.push(valor * quant)
+
+        valorUnitarioMedio.push(valor)
+        quantidadeMedio.push(quant)
+        valorTotMedio.push(valor * quant)
+        
+        tipoAdd.push("gasto")
+        $(".main").load("gastos.html");
     });
 });
