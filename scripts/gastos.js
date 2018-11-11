@@ -10,7 +10,7 @@ $(document).ready(function () {
     for(i = 0; i < nomes.length; i++){
         if (tipoAdd[i] == "gasto"){
             $(".insumos").append(
-                "<ul>" + nomes[i] + ", quantidade: " + quantidadeMedio[i] +
+                "<ul style= 'background-color:#ffcccc'>" + nomes[i] + ", quantidade: " + quantidadeMedio[i] +
                 "<ul>" + "Valor unitário médio: " + valorUnitarioMedio[i] + "</ul>" +
                 "<ul>" + "Valor médio total: " + valorTotMedio[i] + "</ul>" +
                 "<ul>" + "Valor unitário comprado: " + valorUnitarioUsado[i] + "</ul>" +
@@ -20,8 +20,10 @@ $(document).ready(function () {
             )
         }else{
             $(".insumos").append(
+                "<ul style= 'background-color: #cce6ff'>" +
                 "<ul>" + "Entrada de dinheiro por: " + nomes[i] + "<ul>" +  
                 "<ul>" + "Valor: " + quantEntrada[k] + "<ul>" +
+                "</ul>"+
                 "<hr>"
 
             )    
