@@ -1,16 +1,24 @@
 <html>
 <body>
 	<div style="width: 50%; margin: auto;">
-		<h1 style="text-align: center;">Entrada</h1>
-		<h5>Origem</h5>
-		<input type="text" name="nome do gasto" size="80%">
-		<h5>Quantidade</h5>
-		<input type="text" name="nome do gasto" size="80%">
-		<h5>Data</h5>
-		<input type="date" name="nome do gasto">
-		<div style="width: 20%; margin: auto; height: 30px;
-		background-color: green; text-align: center;
-		color: white;"><h4><strong>Confirmar</strong></h4></div>
+		<h1 style="text-align: center;" class="display-4 font-weight-normal">Entrada</h1>
+
+		<div class="mb-3">
+		<label for="Origem">Origem</label>
+        	<input type="text" class="form-control" id="Origem" placeholder="De onde veio?" required="">
+        </div>
+
+		<div class="mb-3">
+		<label for="Quantidade">Quantidade</label>
+        	<input type="text" class="form-control" id="Quantidade" placeholder="Quanto entrou?" required="">
+        </div>
+		
+		<div class="mb-3">
+		<label for="DataM">Data</label>
+        	<input type="text" class="form-control" id="DataM" placeholder="Quando entrou?" required="">
+        </div>
+
+		<div style="text-align: center;"><a class="btn btn-primary my-2">Confirmar<a></div>
 	</div>
 </body>
 </html>
