@@ -1,3 +1,4 @@
+<script src="scripts/addMoney.js"></script>
 <html>
 <body>
 	<div style="width: 50%; margin: auto;">
@@ -5,20 +6,23 @@
 
 		<div class="mb-3">
 		<label for="Origem">Origem</label>
-        	<input type="text" class="form-control" id="Origem" placeholder="De onde veio?" required="">
+			<input type="text" class="form-control" placeholder="De onde veio?" 
+			required="" id="nameEntrada">
         </div>
 
 		<div class="mb-3">
 		<label for="Quantidade">Quantidade</label>
-        	<input type="text" class="form-control" id="Quantidade" placeholder="Quanto entrou?" required="">
+			<input type="text" class="form-control" placeholder="Quanto entrou?" required=""
+			id="quantidadeEntrada">
         </div>
 		
 		<div class="mb-3">
 		<label for="DataM">Data</label>
-        	<input type="text" class="form-control" id="DataM" placeholder="Quando entrou?" required="">
+			<input type="text" class="form-control" id="DataM" placeholder="Quando entrou?" required=""
+			id="dataEntrada">
         </div>
 
-		<div style="text-align: center;"><a class="btn btn-primary my-2">Confirmar<a></div>
+		<div style="text-align: center;"><a class="btn btn-primary my-2" id = "buttonEntrada">Confirmar<a></div>
 	</div>
 </body>
 </html>
